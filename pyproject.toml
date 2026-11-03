@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diskimg"
+version = "1.0.0"
+description = "Работа с образами дисков: FAT12/16/32, NTFS, ISO 9660/Joliet, VHD, MBR/GPT"
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.scripts]
+diskimg = "diskimg.cli:main"
+diskimg-gui = "diskimg.gui:main"
+
+[tool.setuptools]
+packages = ["diskimg"]
